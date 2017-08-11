@@ -36,3 +36,4 @@ itunes.muteVolume(() => {});
 ## License
 
 [MIT](LICENSE)
+
