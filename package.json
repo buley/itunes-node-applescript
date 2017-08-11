@@ -1,6 +1,6 @@
 {
   "name": "itunes-node-applescript",
-  "version": "0.2.55",
+  "version": "0.2.56",
   "description": "Control iTunes on Mac OSX with NodeJS and AppleScript.",
   "keywords": [
     "spotify",
