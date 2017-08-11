@@ -1,7 +1,7 @@
 {
-  "name": "spotify-node-applescript",
-  "version": "0.2.2",
-  "description": "Control Spotify on Mac OSX with NodeJS and AppleScript.",
+  "name": "itunes-node-applescript",
+  "version": "0.2.3",
+  "description": "Control iTunes on Mac OSX with NodeJS and AppleScript.",
   "keywords": [
     "spotify",
     "node",
@@ -9,15 +9,15 @@
     "mac",
     "osx"
   ],
-  "author": "André Haveman <andre.haveman@gmail.com>",
+  "author": "André Haveman <andre.haveman@gmail.com> etc.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/andrehaveman/spotify-node-applescript.git"
+    "url": "git://github.com/buley/itunes-node-applescript.git"
   },
   "engines": {
     "node": ">=0.6.0"
   },
-  "main": "./lib/spotify-node-applescript.js",
+  "main": "./lib/itunes-node-applescript.js",
   "dependencies": {
     "applescript": "1.0.0"
   },

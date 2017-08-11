@@ -20,9 +20,9 @@ $ npm test
 Play a track with Spotify URI `uri`.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.playTrack('spotify:track:3AhXZa8sUQht0UEdBJgpGc', function(){
+itunes.playTrack('itunes:track:3AhXZa8sUQht0UEdBJgpGc', function(){
     // track is playing
 });
 ```
@@ -32,9 +32,9 @@ spotify.playTrack('spotify:track:3AhXZa8sUQht0UEdBJgpGc', function(){
 Play a track in context of for example an album.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.playTrackInContext('spotify:track:0R8P9KfGJCDULmlEoBagcO', 'spotify:album:6ZG5lRT77aJ3btmArcykra', function(){
+itunes.playTrackInContext('itunes:track:0R8P9KfGJCDULmlEoBagcO', 'itunes:album:6ZG5lRT77aJ3btmArcykra', function(){
     // Track is playing in context of an album
 });
 ```
@@ -44,9 +44,9 @@ spotify.playTrackInContext('spotify:track:0R8P9KfGJCDULmlEoBagcO', 'spotify:albu
 Get the current track. `callback` is called with the current track as second argument.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.getTrack(function(err, track){
+itunes.getTrack(function(err, track){
 
     /*
     track = {
@@ -58,10 +58,10 @@ spotify.getTrack(function(err, track){
         track_number: 1,
         starred: false,
         popularity: 71,
-        id: 'spotify:track:3AhXZa8sUQht0UEdBJgpGc',
+        id: 'itunes:track:3AhXZa8sUQht0UEdBJgpGc',
         name: 'Like A Rolling Stone',
         album_artist: 'Bob Dylan',
-        spotify_url: 'spotify:track:3AhXZa8sUQht0UEdBJgpGc' }
+        itunes_url: 'itunes:track:3AhXZa8sUQht0UEdBJgpGc' }
     }
     */
 
@@ -73,9 +73,9 @@ spotify.getTrack(function(err, track){
 Get player state.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.getState(function(err, state){
+itunes.getState(function(err, state){
     /*
     state = {
         volume: 99,
@@ -91,9 +91,9 @@ spotify.getState(function(err, state){
 Jump to a specific second of the current song.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.jumpTo(15, function() {
+itunes.jumpTo(15, function() {
     console.log('Jumped 15th second of the song');
 });
 ```
@@ -131,10 +131,10 @@ Turn volume down.
 Sets the volume.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.setVolume(42, function() {
-    spotify.getState(function(err, state) {
+itunes.setVolume(42, function() {
+    itunes.getState(function(err, state) {
         console.log(state.volume);
     });
 });
@@ -153,9 +153,9 @@ Returns audio to original volume.
 Check if Spotify is running.
 
 ```javascript
-var spotify = require('itunes-node-applescript');
+var itunes = require('itunes-node-applescript');
 
-spotify.isRunning(function(err, isRunning){
+itunes.isRunning(function(err, isRunning){
     console.log(isRunning); // true
 });
 ```
