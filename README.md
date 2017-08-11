@@ -1,10 +1,10 @@
-# spotify-node-applescript
+# itunes-node-applescript
 Control Spotify on Mac OSX with NodeJS and AppleScript.
 
 ## Installation
 
 ```
-$ npm install spotify-node-applescript
+$ npm install itunes-node-applescript
 ```
 
 ## Running unit tests
@@ -20,7 +20,7 @@ $ npm test
 Play a track with Spotify URI `uri`.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.playTrack('spotify:track:3AhXZa8sUQht0UEdBJgpGc', function(){
     // track is playing
@@ -32,7 +32,7 @@ spotify.playTrack('spotify:track:3AhXZa8sUQht0UEdBJgpGc', function(){
 Play a track in context of for example an album.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.playTrackInContext('spotify:track:0R8P9KfGJCDULmlEoBagcO', 'spotify:album:6ZG5lRT77aJ3btmArcykra', function(){
     // Track is playing in context of an album
@@ -44,7 +44,7 @@ spotify.playTrackInContext('spotify:track:0R8P9KfGJCDULmlEoBagcO', 'spotify:albu
 Get the current track. `callback` is called with the current track as second argument.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.getTrack(function(err, track){
 
@@ -73,7 +73,7 @@ spotify.getTrack(function(err, track){
 Get player state.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.getState(function(err, state){
     /*
@@ -91,7 +91,7 @@ spotify.getState(function(err, state){
 Jump to a specific second of the current song.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.jumpTo(15, function() {
     console.log('Jumped 15th second of the song');
@@ -131,7 +131,7 @@ Turn volume down.
 Sets the volume.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.setVolume(42, function() {
     spotify.getState(function(err, state) {
@@ -153,7 +153,7 @@ Returns audio to original volume.
 Check if Spotify is running.
 
 ```javascript
-var spotify = require('spotify-node-applescript');
+var spotify = require('itunes-node-applescript');
 
 spotify.isRunning(function(err, isRunning){
     console.log(isRunning); // true
